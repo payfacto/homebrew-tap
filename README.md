@@ -16,11 +16,16 @@ Then install any available formula:
 brew install payfacto/tap/bb
 ```
 
+```sh
+brew install payfacto/tap/tokentally
+```
+
 ## Formulae
 
-| Formula | Description | Version |
-|---------|-------------|---------|
-| [bb](https://github.com/payfacto/bb) | Bitbucket Cloud CLI — manage PRs, pipelines, branches, and more | v0.2.0 |
+| Formula | Description |
+|---------|-------------|
+| [bb](https://github.com/payfacto/bb) | Bitbucket Cloud CLI — manage PRs, pipelines, branches, and more |
+| [TokenTally](https://github.com/payfacto/tokentally) | A desktop app with live dashboards for tracking Claude Code token usage, costs, and session history. |
 
 ## Updating
 
@@ -28,7 +33,14 @@ Formulae are updated automatically via GoReleaser when a new version is released
 
 ```sh
 brew update
+```
+
+```sh
 brew upgrade bb
+```
+
+```sh
+brew upgrade tokentally
 ```
 
 ## Documentation
