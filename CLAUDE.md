@@ -10,6 +10,7 @@ End users install via:
 
 ```sh
 brew tap payfacto/tap
+brew tap payfacto/lmsgo
 brew install payfacto/tap/bb
 ```
 

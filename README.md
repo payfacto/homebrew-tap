@@ -24,7 +24,8 @@ brew install payfacto/tap/tokentally
 
 | Formula | Description |
 |---------|-------------|
-| [bb](https://github.com/payfacto/bb) | Bitbucket Cloud CLI — manage PRs, pipelines, branches, and more |
+| [bb](https://github.com/payfacto/bb) | Bitbucket Cloud CLI for AI Agents — a TUI for humans! |
+| [lmsgo](https://github.com/payfacto/lmsgo) | Reduce Claude Code token usage with a local model running via [LM Studio](https://lmstudio.ai/) |
 | [TokenTally](https://github.com/payfacto/tokentally) | A desktop app with live dashboards for tracking Claude Code token usage, costs, and session history. |
 
 ## Updating
@@ -37,6 +38,10 @@ brew update
 
 ```sh
 brew upgrade bb
+```
+
+```sh
+brew upgrade lmsgo
 ```
 
 ```sh
