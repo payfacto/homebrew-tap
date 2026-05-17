@@ -1,6 +1,6 @@
 cask "tokentally" do
-  version "0.1.12"
-  sha256 "f934add1cc829403b83d53b0564f2c4cbf03210fcb4174870ff1485ddcc30b7b"
+  version "0.1.13"
+  sha256 "4e14882073cff87c715b3dc1dc99e3e355852ff8c034feb94e0435aa126673e3"
 
   url "https://github.com/payfacto/tokentally/releases/download/v#{version}/tokentally-darwin-arm64.zip"
   name "TokenTally"
