@@ -20,6 +20,10 @@ brew install payfacto/tap/bb
 brew install payfacto/tap/tokentally
 ```
 
+```sh
+brew install payfacto/tap/awsprof
+```
+
 ## Formulae
 
 | Formula | Description |
@@ -27,6 +31,7 @@ brew install payfacto/tap/tokentally
 | [bb](https://github.com/payfacto/bb) | Bitbucket Cloud CLI for AI Agents — a TUI for humans! |
 | [lmsgo](https://github.com/payfacto/lmsgo) | Reduce Claude Code token usage with a local model running via [LM Studio](https://lmstudio.ai/) |
 | [TokenTally](https://github.com/payfacto/tokentally) | A desktop app with live dashboards for tracking Claude Code token usage, costs, and session history. |
+| [awsprof](https://github.com/payfacto/awsprof-cli) | Pick an AWS profile to log in as, from a list of available profiles |
 
 ## Updating
 
@@ -46,6 +51,10 @@ brew upgrade lmsgo
 
 ```sh
 brew upgrade tokentally
+```
+
+```sh
+brew upgrade awsprof
 ```
 
 ## Documentation
