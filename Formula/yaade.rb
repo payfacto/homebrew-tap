@@ -5,21 +5,21 @@
 class Yaade < Formula
   desc "Yaade CLI - manage collections, requests, environments, and more"
   homepage "https://github.com/payfacto/cli-yaade"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/payfacto/cli-yaade/releases/download/v0.1.0/yaade_darwin_amd64.tar.gz"
-      sha256 "5f8c6de6e63b9c6748ad350ae80686948790e5c7f72268c44bf1a53e3168f3dd"
+      url "https://github.com/payfacto/cli-yaade/releases/download/v0.1.1/yaade_darwin_amd64.tar.gz"
+      sha256 "8e4d6bccaf100f0679822fa134c1149c97b13285088a5d34669f196203ccaffd"
 
       define_method(:install) do
         bin.install "yaade"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/payfacto/cli-yaade/releases/download/v0.1.0/yaade_darwin_arm64.tar.gz"
-      sha256 "de50aae306c9932dc03bc57fe59d0fad255b6a8c431a3d900dd5d33c60a8c284"
+      url "https://github.com/payfacto/cli-yaade/releases/download/v0.1.1/yaade_darwin_arm64.tar.gz"
+      sha256 "d6d5e694a4aff7e5a1f16fc15aca0db833eaf213e8d33d43643c9b484d775112"
 
       define_method(:install) do
         bin.install "yaade"
@@ -29,15 +29,15 @@ class Yaade < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/payfacto/cli-yaade/releases/download/v0.1.0/yaade_linux_amd64.tar.gz"
-      sha256 "7e8e2e9fe35dec0469aa862531c93f0d7a2059ab3e35d2133d5a8514b6b55a7c"
+      url "https://github.com/payfacto/cli-yaade/releases/download/v0.1.1/yaade_linux_amd64.tar.gz"
+      sha256 "324eff3e3fc5edf2db83484b5c0c8d73f5edf25959a6967bf7e96feb9265eb8e"
       define_method(:install) do
         bin.install "yaade"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/payfacto/cli-yaade/releases/download/v0.1.0/yaade_linux_arm64.tar.gz"
-      sha256 "740b2f884c5a7ccede602de5fac8e1a810bfba424b949603baed3322fc99e85b"
+      url "https://github.com/payfacto/cli-yaade/releases/download/v0.1.1/yaade_linux_arm64.tar.gz"
+      sha256 "ea8ed2b6cd0a62b1e8eefd9c9702d899f2c94bec3fe8fb2d4d4f7e47e61c3b2a"
       define_method(:install) do
         bin.install "yaade"
       end
