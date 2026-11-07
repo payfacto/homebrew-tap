@@ -5,21 +5,21 @@
 class Bb < Formula
   desc "Bitbucket Cloud CLI — manage PRs, pipelines, branches, and more"
   homepage "https://github.com/payfacto/bb"
-  version "0.14.1"
+  version "0.15.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/payfacto/bb/releases/download/v0.14.1/bb_darwin_amd64.tar.gz"
-      sha256 "ac8a120ca751c234506fdf36402ad6bb03487def623aef0bffd880b697cac917"
+      url "https://github.com/payfacto/bb/releases/download/v0.15.0/bb_darwin_amd64.tar.gz"
+      sha256 "c982da8e324db7f1460ac70b88f254ec132a6ceb20563ff95b1fd43fc77de1e4"
 
       define_method(:install) do
         bin.install "bb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/payfacto/bb/releases/download/v0.14.1/bb_darwin_arm64.tar.gz"
-      sha256 "ae30235801231cd3c104af0c82924066c2f1f62973f32d734e49960861f092e2"
+      url "https://github.com/payfacto/bb/releases/download/v0.15.0/bb_darwin_arm64.tar.gz"
+      sha256 "16b445ca2f8b8afbb81d83efb0d06a2da4ce8aac7d4d6b48db13a43bd2d42bc3"
 
       define_method(:install) do
         bin.install "bb"
@@ -29,15 +29,15 @@ class Bb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/payfacto/bb/releases/download/v0.14.1/bb_linux_amd64.tar.gz"
-      sha256 "da79f0df7c80e65e7f57d94d5684f5d63311593ca77f7c61d901953c372dbdb7"
+      url "https://github.com/payfacto/bb/releases/download/v0.15.0/bb_linux_amd64.tar.gz"
+      sha256 "81d91c607f7790e9ee872d5e70e08dfd5f1db19482c8e8ebd3c284c37a0d4baa"
       define_method(:install) do
         bin.install "bb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/payfacto/bb/releases/download/v0.14.1/bb_linux_arm64.tar.gz"
-      sha256 "52193284da01648abeda13e884267e638f2da0c2d52c9e86e70d7ca45056066a"
+      url "https://github.com/payfacto/bb/releases/download/v0.15.0/bb_linux_arm64.tar.gz"
+      sha256 "47a44bc99e861442da6d355472b422b1f8ce527ea0249cdab9cc5fa403053a7a"
       define_method(:install) do
         bin.install "bb"
       end
