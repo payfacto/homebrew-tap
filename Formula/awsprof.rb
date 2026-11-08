@@ -5,21 +5,21 @@
 class Awsprof < Formula
   desc "Pick an AWS profile to log in as, from a list of available profiles"
   homepage "https://github.com/payfacto/awsprof-cli"
-  version "0.1.2"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/payfacto/awsprof-cli/releases/download/v0.1.2/awsprof_darwin_amd64.tar.gz"
-      sha256 "36176d3278f8848e29dfb791b1c6a1662585935046045b9c0cc680c6e34fe100"
+      url "https://github.com/payfacto/awsprof-cli/releases/download/v0.2.0/awsprof_darwin_amd64.tar.gz"
+      sha256 "0eb79bd7410fbaa2c544fb9628c116aa93f0c6cdb09eaed8001b78735a775e23"
 
       define_method(:install) do
         bin.install "awsprof"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/payfacto/awsprof-cli/releases/download/v0.1.2/awsprof_darwin_arm64.tar.gz"
-      sha256 "75d9a96e12ff5080acd5f58d69552e901ceceabf01742a637e430f3d6bf2f6db"
+      url "https://github.com/payfacto/awsprof-cli/releases/download/v0.2.0/awsprof_darwin_arm64.tar.gz"
+      sha256 "b908e3be874e49619bcce5be7d3ac3516d4542b4162377a46d7d8d1781823fe4"
 
       define_method(:install) do
         bin.install "awsprof"
@@ -29,15 +29,15 @@ class Awsprof < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/payfacto/awsprof-cli/releases/download/v0.1.2/awsprof_linux_amd64.tar.gz"
-      sha256 "4d725aa34014f165bf38cd6fb379a448fbf2b88fa9d46addcb99d8b83a56f8c8"
+      url "https://github.com/payfacto/awsprof-cli/releases/download/v0.2.0/awsprof_linux_amd64.tar.gz"
+      sha256 "36a072be48534c9e296dc9c15f81d07a4fd4890ecaf4f32a3cd2362a0d8be737"
       define_method(:install) do
         bin.install "awsprof"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/payfacto/awsprof-cli/releases/download/v0.1.2/awsprof_linux_arm64.tar.gz"
-      sha256 "87a87e013ea1612cd32bb20fd9809a5d2b04489f0ee4bbad9e0d3800edab149a"
+      url "https://github.com/payfacto/awsprof-cli/releases/download/v0.2.0/awsprof_linux_arm64.tar.gz"
+      sha256 "570a0d261171642fa7ac6427f49d822b283fd0a0ce52bd9ac54a427f5496e51e"
       define_method(:install) do
         bin.install "awsprof"
       end
