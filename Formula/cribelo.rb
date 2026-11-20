@@ -1,28 +1,28 @@
 class Cribelo < Formula
   desc "Ranks the files of a pull request by how much they need a human reader"
   homepage "https://github.com/payfacto/cribelo"
-  version "2.4.0-pf.2"
+  version "2.4.0-pf.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/payfacto/cribelo/releases/download/v2.4.0-pf.2/cribelo_Darwin_arm64"
-      sha256 "d9da719eafee737a99c9cae1ebba43dd0cb9fc0a1172f18155a2805898fe121b"
+      url "https://github.com/payfacto/cribelo/releases/download/v2.4.0-pf.3/cribelo_Darwin_arm64"
+      sha256 "f881e3cb2f60b9fa626c39b535ed5b900418167875cfb90ebc7ce57f2780daaf"
     end
     on_intel do
-      url "https://github.com/payfacto/cribelo/releases/download/v2.4.0-pf.2/cribelo_Darwin_x86_64"
-      sha256 "56ac21304525cb688e9c7b1051ef9862390724858ed9b1632f24a9c10d192755"
+      url "https://github.com/payfacto/cribelo/releases/download/v2.4.0-pf.3/cribelo_Darwin_x86_64"
+      sha256 "f96674d1b48617603a9d2805cb4eb7e56fc869ea4aba9a78cf70d4717e3edde5"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/payfacto/cribelo/releases/download/v2.4.0-pf.2/cribelo_Linux_arm64"
-      sha256 "40e9ebf9fa32b442700e7fe248d96db4388dbf8b88b9c5f6dece35d395de4839"
+      url "https://github.com/payfacto/cribelo/releases/download/v2.4.0-pf.3/cribelo_Linux_arm64"
+      sha256 "cf9c5ce11e2dba2e931998d8def40ce84b5aa2ab8beaf80c7c5f5997d343ae3a"
     end
     on_intel do
-      url "https://github.com/payfacto/cribelo/releases/download/v2.4.0-pf.2/cribelo_Linux_x86_64"
-      sha256 "8892907653c0757b60e5064e83e0cc0fd46ae0cca0995284a84fea2f9c764ea7"
+      url "https://github.com/payfacto/cribelo/releases/download/v2.4.0-pf.3/cribelo_Linux_x86_64"
+      sha256 "03a65db6c2919cd399685b4d05c1715ec20979577df14048d86e1b69f1431717"
     end
   end
 
